@@ -35,7 +35,7 @@ public class StudentController {
     @DeleteMapping("/{id}")
     public String deleteStudent(@PathVariable String id){
         studentService.deletedStudent(id);
-        return "student deleted successfully";
+        return "student deleted successfully with id ";
 
     }
 
@@ -63,5 +63,6 @@ public class StudentController {
         return  new ResponseEntity<>(sudto,HttpStatus.OK);
 
     }
+
 
 }
